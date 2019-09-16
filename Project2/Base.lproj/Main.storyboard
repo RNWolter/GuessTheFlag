@@ -18,30 +18,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhL-4g-lD3">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enN-Xp-sZZ">
+                                <rect key="frame" x="80" y="230" width="254" height="100"/>
+                                <state key="normal" title="Button" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enN-Xp-sZZ">
-                                <rect key="frame" x="107" y="231" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEm-Ef-dea">
+                                <rect key="frame" x="80" y="380" width="254" height="100"/>
+                                <state key="normal" title="Button" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEm-Ef-dea">
-                                <rect key="frame" x="107" y="382" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FhL-4g-lD3">
+                                <rect key="frame" x="80" y="100" width="254" height="100"/>
+                                <state key="normal" title="Button" image="us"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FhL-4g-lD3" firstAttribute="leading" secondItem="enN-Xp-sZZ" secondAttribute="leading" id="9BO-tu-4bL"/>
+                            <constraint firstItem="enN-Xp-sZZ" firstAttribute="top" secondItem="FhL-4g-lD3" secondAttribute="bottom" constant="30" id="AHM-2Z-biX"/>
+                            <constraint firstItem="WEm-Ef-dea" firstAttribute="top" secondItem="enN-Xp-sZZ" secondAttribute="bottom" constant="50" id="Glz-N2-Teh"/>
+                            <constraint firstItem="FhL-4g-lD3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VKj-Cp-3D1"/>
+                            <constraint firstItem="FhL-4g-lD3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="gM8-l6-wCZ"/>
+                            <constraint firstItem="enN-Xp-sZZ" firstAttribute="leading" secondItem="WEm-Ef-dea" secondAttribute="leading" id="tht-wb-XYb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="fHY-EW-Xkh"/>
+                    <connections>
+                        <outlet property="button1" destination="FhL-4g-lD3" id="cZe-jz-rO9"/>
+                        <outlet property="button2" destination="enN-Xp-sZZ" id="dN8-hx-x3I"/>
+                        <outlet property="button3" destination="WEm-Ef-dea" id="aau-6E-3v9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-426"/>
+            <point key="canvasLocation" x="1645" y="-585"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pXV-JJ-PjK">
@@ -59,7 +69,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OpB-lO-950" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="-364"/>
+            <point key="canvasLocation" x="514" y="-574"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="us" width="200" height="100"/>
+    </resources>
 </document>
